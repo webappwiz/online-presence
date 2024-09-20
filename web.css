@@ -1,0 +1,43 @@
+body {background-color: blanchedalmond;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {color: brown;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  ol {
+    list-style-type: none;
+    counter-reset: section;
+  }
+  
+  li {
+    counter-increment: section;
+    margin-bottom: 30px;
+  }
+  
+  li::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+    margin-right: 5px;
+  }
